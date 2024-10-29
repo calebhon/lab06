@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 20px;
+}
+
+
+.static-box {
+    position: static;
+    background: rgb(101, 161, 181);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+.relative-box {
+    position: relative;
+    top: 20px;
+    left: 30px;
+    background: rgb(147, 68, 68);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+.container {
+    position: relative; 
+    height: 100px; 
+    background: lightgray;
+    margin-bottom: 20px;
+}
+.absolute-box {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background: lightyellow;
+    padding: 10px;
+}
+
+.fixed-box {
+    height: 150px;
+    width: 150px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: lightgray;
+    padding: 20px;
+}
+
+.sticky-box {
+    position: sticky;
+    top: 0;
+    background: lightseagreen;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+
+.background-image {
+    background-image: url('https://car-images.bauersecure.com/wp-images/3695/1040x0/porsche-911-gt3.jpg?scale=down');
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+.background-image-repeat {
+    background-image: url('https://car-images.bauersecure.com/wp-images/3695/1040x0/porsche-911-gt3.jpg?scale=down');
+    background-repeat: repeat; 
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.overlap-container {
+    position: relative; 
+    height: 100px;
+    margin-bottom: 20px;
+}
+.box1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background: rgba(255, 0, 0, 0.7);
+    z-index: 1;
+}
+.box2 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    background: rgba(0, 0, 255, 0.7);
+    z-index: 2;
+}
+
+
+.flex-row-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.box {
+    background: lightcoral;
+    padding: 20px;
+    flex: 1; 
+}
+
+
+.flex-column-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Q11: Justify Content Evenly */
+.flex-justify-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+
+.flex-wrap-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.flex-center-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.flex-content-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.flex-grow-container {
+    display: flex;
+    gap: 10px;
+}
+.grow {
+    flex-grow: 2; 
+}
